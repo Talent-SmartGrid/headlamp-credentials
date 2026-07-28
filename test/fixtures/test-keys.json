@@ -1,0 +1,21 @@
+{
+  "WARNING": "TEST KEY — NEVER USE IN PRODUCTION. Generated solely for the headlamp-credentials test suite.",
+  "issuerKey1": {
+    "id": "did:web:myheadlamp.com#key-1",
+    "controller": "did:web:myheadlamp.com",
+    "publicKeyMultibase": "z6MkgBGUN1MAtT5XUJdKeM8nyNeDAzHZFrfunLR77MhfkX7t",
+    "secretKeyMultibase": "zrv2wqXWLoBV3ckPQbJy1gPVKQNHbN2Lo1Prh3sSUaTKu2H7EHp4jzKEEZRdzmG6A9Ynyc2umUcJrubPdQkYKswZGva"
+  },
+  "issuerKey2": {
+    "id": "did:web:myheadlamp.com#key-2",
+    "controller": "did:web:myheadlamp.com",
+    "publicKeyMultibase": "z6MkjZLdYSgXA2gxqSbBWTV4uFZEyD2QKheDjcaWXPRHkY2q",
+    "secretKeyMultibase": "zrv3XXAyWTLTJvZhVb4hLjzR8fGyQGUzrueFsDnmEmStHXeLBuLYALect24Vp9nG6xA4KsSsqzbbTDVzyFo9FgMUyty"
+  },
+  "endorserKey": {
+    "id": "did:web:coolsys.example#key-1",
+    "controller": "did:web:coolsys.example",
+    "publicKeyMultibase": "z6MknPg8WpkFgzidMbspYCyVTaSebwRSN9TG27huW5nEGQtM",
+    "secretKeyMultibase": "zrv4z5LyZwAq76fJ2DApk9mZBcU1Gb3PJagJu5XQbd7Vr1KHi1jByG4NdbZ3m7q5ZCH5sGLAd8qXmzrit6ttDJG7ypZ"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "format": "headlamp-credential-bundle",
+  "version": "0.1",
+  "credential": {
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2",
+      "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.3.json"
+    ],
+    "id": "urn:uuid:c0ffee00-0000-4000-8000-000000000001",
+    "type": [
+      "VerifiableCredential",
+      "AchievementCredential"
+    ],
+    "issuer": {
+      "id": "did:web:myheadlamp.com",
+      "type": [
+        "Profile"
+      ],
+      "name": "Headlamp",
+      "url": "https://myheadlamp.com"
+    },
+    "validFrom": "2026-05-01T00:00:00Z",
+    "validUntil": "2031-05-01T00:00:00Z",
+    "name": "Headlamp SkillBridge Credential",
+    "credentialSubject": {
+      "id": "urn:headlamp:candidate:e9b1a2f4",
+      "type": [
+        "AchievementSubject"
+      ],
+      "achievement": {
+        "id": "https://myheadlamp.com/achievements/skillbridge-credential",
+        "type": [
+          "Achievement"
+        ],
+        "name": "Headlamp SkillBridge Credential",
+        "description": "Recognizes a service member’s participation in a DoD SkillBridge program facilitated and verified by Headlamp.",
+        "criteria": {
+          "narrative": "Awarded on the basis of Headlamp-verified SkillBridge placement documents (offer letter and training plan) and/or a host-supervisor attestation of completion. The evidence narrative on each credential states exactly which basis applies."
+        }
+      }
+    },
+    "evidence": [
+      {
+        "id": "urn:uuid:c0ffee00-0000-4000-8000-000000000001#evidence-1",
+        "type": [
+          "Evidence"
+        ],
+        "name": "Evidence basis: both",
+        "narrative": "Placed in a DoD SkillBridge at CoolSys Inc., January 6 – April 25, 2026. Offer letter and training plan verified by Headlamp. Completed a DoD SkillBridge at CoolSys Inc., January 6 – April 25, 2026. Confirmed by Dana Whitfield, Field Operations Manager."
+      }
+    ],
+    "credentialStatus": {
+      "id": "https://myheadlamp.com/status/skillbridge/1#7",
+      "type": "BitstringStatusListEntry",
+      "statusPurpose": "revocation",
+      "statusListIndex": "7",
+      "statusListCredential": "https://myheadlamp.com/status/skillbridge/1"
+    },
+    "proof": {
+      "type": "DataIntegrityProof",
+      "created": "2026-05-01T00:00:00Z",
+      "verificationMethod": "did:web:myheadlamp.com#key-1",
+      "cryptosuite": "eddsa-rdfc-2022",
+      "proofPurpose": "assertionMethod",
+      "proofValue": "z5fW2YeXQjU5ssR6SpjS35QXCNYMzVK56zLBF4utJ79i9v9bcj4Sst53hJKbwCVwXkQD66MAXGBZwoQWbPJNZzAZz"
+    }
+  },
+  "endorsements": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.3.json"
+      ],
+      "id": "urn:uuid:c0ffee00-0000-4000-8000-000000000002",
+      "type": [
+        "VerifiableCredential",
+        "EndorsementCredential"
+      ],
+      "issuer": {
+        "id": "did:web:coolsys.example",
+        "type": [
+          "Profile"
+        ],
+        "name": "CoolSys Inc."
+      },
+      "validFrom": "2026-05-01T00:00:00Z",
+      "name": "Headlamp SkillBridge Endorsement: work_confirmed",
+      "credentialSubject": {
+        "id": "urn:uuid:c0ffee00-0000-4000-8000-000000000001",
+        "type": [
+          "EndorsementSubject"
+        ],
+        "endorsementComment": "The endorser confirms that the SkillBridge work described in the referenced credential was performed under its supervision."
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2026-05-01T00:00:00Z",
+        "verificationMethod": "did:web:coolsys.example#key-1",
+        "cryptosuite": "eddsa-rdfc-2022",
+        "proofPurpose": "assertionMethod",
+        "proofValue": "z2wdCUYVejMXbn1TvTHVAraqoR84HMZ1aL883zxd7Ny547tNPqRdv9p1BQRcWFJdBuXxCqot72ThkW7T9bev19Rv5"
+      }
+    }
+  ],
+  "didDocuments": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/multikey/v1"
+      ],
+      "id": "did:web:myheadlamp.com",
+      "verificationMethod": [
+        {
+          "id": "did:web:myheadlamp.com#key-1",
+          "type": "Multikey",
+          "controller": "did:web:myheadlamp.com",
+          "publicKeyMultibase": "z6MkgBGUN1MAtT5XUJdKeM8nyNeDAzHZFrfunLR77MhfkX7t"
+        },
+        {
+          "id": "did:web:myheadlamp.com#key-2",
+          "type": "Multikey",
+          "controller": "did:web:myheadlamp.com",
+          "publicKeyMultibase": "z6MkjZLdYSgXA2gxqSbBWTV4uFZEyD2QKheDjcaWXPRHkY2q"
+        }
+      ],
+      "assertionMethod": [
+        "did:web:myheadlamp.com#key-1",
+        "did:web:myheadlamp.com#key-2"
+      ],
+      "authentication": [
+        "did:web:myheadlamp.com#key-1",
+        "did:web:myheadlamp.com#key-2"
+      ]
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/multikey/v1"
+      ],
+      "id": "did:web:coolsys.example",
+      "verificationMethod": [
+        {
+          "id": "did:web:coolsys.example#key-1",
+          "type": "Multikey",
+          "controller": "did:web:coolsys.example",
+          "publicKeyMultibase": "z6MknPg8WpkFgzidMbspYCyVTaSebwRSN9TG27huW5nEGQtM"
+        }
+      ],
+      "assertionMethod": [
+        "did:web:coolsys.example#key-1"
+      ],
+      "authentication": [
+        "did:web:coolsys.example#key-1"
+      ]
+    }
+  ],
+  "statusListCredentials": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2"
+      ],
+      "id": "https://myheadlamp.com/status/skillbridge/1",
+      "type": [
+        "VerifiableCredential",
+        "BitstringStatusListCredential"
+      ],
+      "credentialSubject": {
+        "id": "https://myheadlamp.com/status/skillbridge/1#list",
+        "type": "BitstringStatusList",
+        "encodedList": "uH4sIAAAAAAAAA-3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAIC3AYbSVKsAQAAA",
+        "statusPurpose": "revocation"
+      },
+      "issuer": {
+        "id": "did:web:myheadlamp.com",
+        "name": "Headlamp"
+      },
+      "validFrom": "2026-05-01T00:00:00Z",
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2026-05-01T00:00:00Z",
+        "verificationMethod": "did:web:myheadlamp.com#key-1",
+        "cryptosuite": "eddsa-rdfc-2022",
+        "proofPurpose": "assertionMethod",
+        "proofValue": "z43GBGeMG9XbDhGvDqfmHFBjFEHLFEZQCE2qtH9pKGLvc79Lg9oyWwpzYPBbnMXDEZgzpdNktf5ThJYZj5anqbWQ8"
+      }
+    }
+  ]
+}
