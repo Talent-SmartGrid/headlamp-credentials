@@ -1,0 +1,270 @@
+{
+  "format": "course",
+  "confidence": 1,
+  "fields": {
+    "participant": "Jordan A. Maxwell",
+    "trainingOutlineTitle": "Project Management & Continuous Improvement Track",
+    "duration": "12 weeks",
+    "location": "Remote (instructor-led online)",
+    "totalHours": 480,
+    "weeks": [
+      {
+        "week": 1,
+        "days": [
+          {
+            "day": 1,
+            "text": "Course orientation; Agile mindset overview; History of Scrum"
+          },
+          {
+            "day": 2,
+            "text": "Mastering Trello; Boards, lists, and cards; Workflow automation basics"
+          },
+          {
+            "day": 3,
+            "text": "Scrum roles deep dive; Sprint ceremonies overview"
+          },
+          {
+            "day": 4,
+            "text": "User stories and backlog grooming; Estimation with story points"
+          },
+          {
+            "day": 5,
+            "text": "Team simulation lab; Retrospective practice"
+          }
+        ],
+        "notes": [],
+        "dateRange": "Oct 6 - Oct 10",
+        "title": "Agile Foundations",
+        "hours": 40,
+        "objective": "Build a working vocabulary of Agile roles, events, and artifacts."
+      },
+      {
+        "week": 2,
+        "days": [
+          {
+            "day": 1,
+            "text": "MS Power BI; Connecting data sources"
+          },
+          {
+            "day": 2,
+            "text": "Data modeling fundamentals; DAX basics"
+          },
+          {
+            "day": 3,
+            "text": "Building dashboards in MS Power BI; Visualization best practices"
+          },
+          {
+            "day": 4,
+            "text": "MS Excel pivot tables; Conditional formatting for status reports"
+          },
+          {
+            "day": 5,
+            "text": "Reporting lab; Present a project dashboard"
+          }
+        ],
+        "notes": [],
+        "dateRange": "Oct 13 - Oct 17",
+        "title": "Data & Reporting Tools",
+        "hours": 40,
+        "objective": "Produce basic dashboards and reports for project tracking."
+      },
+      {
+        "week": 3,
+        "days": [
+          {
+            "day": 1,
+            "text": "Green Belt Foundations; DMAIC overview"
+          },
+          {
+            "day": 2,
+            "text": "Process mapping; SIPOC diagrams"
+          },
+          {
+            "day": 3,
+            "text": "Root cause analysis; Fishbone diagrams; 5 Whys"
+          },
+          {
+            "day": 4,
+            "text": "Control charts introduction; Basic statistics refresher"
+          },
+          {
+            "day": 5,
+            "text": "Capstone kickoff; Project charter drafting"
+          }
+        ],
+        "notes": [],
+        "dateRange": "Oct 20 - Oct 24",
+        "title": "Green Belt Foundations",
+        "hours": 40,
+        "objective": "Apply core Lean Six Sigma tools to a sample process problem."
+      }
+    ],
+    "skillCandidates": [
+      {
+        "label": "Course orientation",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 1: Course orientation; Agile mindset overview; History of Scrum"
+      },
+      {
+        "label": "Agile mindset overview",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 1: Course orientation; Agile mindset overview; History of Scrum"
+      },
+      {
+        "label": "History of Scrum",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 1: Course orientation; Agile mindset overview; History of Scrum"
+      },
+      {
+        "label": "Mastering Trello",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 2: Mastering Trello; Boards, lists, and cards; Workflow automation basics"
+      },
+      {
+        "label": "Boards, lists, and cards",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 2: Mastering Trello; Boards, lists, and cards; Workflow automation basics"
+      },
+      {
+        "label": "Workflow automation basics",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 2: Mastering Trello; Boards, lists, and cards; Workflow automation basics"
+      },
+      {
+        "label": "Scrum roles deep dive",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 3: Scrum roles deep dive; Sprint ceremonies overview"
+      },
+      {
+        "label": "Sprint ceremonies overview",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 3: Scrum roles deep dive; Sprint ceremonies overview"
+      },
+      {
+        "label": "User stories and backlog grooming",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 4: User stories and backlog grooming; Estimation with story points"
+      },
+      {
+        "label": "Estimation with story points",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 4: User stories and backlog grooming; Estimation with story points"
+      },
+      {
+        "label": "Team simulation lab",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 5: Team simulation lab; Retrospective practice"
+      },
+      {
+        "label": "Retrospective practice",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 5: Team simulation lab; Retrospective practice"
+      },
+      {
+        "label": "MS Power BI",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 1: MS Power BI; Connecting data sources"
+      },
+      {
+        "label": "Connecting data sources",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 1: MS Power BI; Connecting data sources"
+      },
+      {
+        "label": "Data modeling fundamentals",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 2: Data modeling fundamentals; DAX basics"
+      },
+      {
+        "label": "DAX basics",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 2: Data modeling fundamentals; DAX basics"
+      },
+      {
+        "label": "Building dashboards in MS Power BI",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 3: Building dashboards in MS Power BI; Visualization best practices"
+      },
+      {
+        "label": "Visualization best practices",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 3: Building dashboards in MS Power BI; Visualization best practices"
+      },
+      {
+        "label": "MS Excel pivot tables",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 4: MS Excel pivot tables; Conditional formatting for status reports"
+      },
+      {
+        "label": "Conditional formatting for status reports",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 4: MS Excel pivot tables; Conditional formatting for status reports"
+      },
+      {
+        "label": "Reporting lab",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 5: Reporting lab; Present a project dashboard"
+      },
+      {
+        "label": "Present a project dashboard",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 5: Reporting lab; Present a project dashboard"
+      },
+      {
+        "label": "Green Belt Foundations",
+        "sourceSection": "curriculum_day",
+        "context": "Week 3, Day 1: Green Belt Foundations; DMAIC overview"
+      },
+      {
+        "label": "DMAIC overview",
+        "sourceSection": "curriculum_day",
+        "context": "Week 3, Day 1: Green Belt Foundations; DMAIC overview"
+      },
+      {
+        "label": "Process mapping",
+        "sourceSection": "curriculum_day",
+        "context": "Week 3, Day 2: Process mapping; SIPOC diagrams"
+      },
+      {
+        "label": "SIPOC diagrams",
+        "sourceSection": "curriculum_day",
+        "context": "Week 3, Day 2: Process mapping; SIPOC diagrams"
+      },
+      {
+        "label": "Root cause analysis",
+        "sourceSection": "curriculum_day",
+        "context": "Week 3, Day 3: Root cause analysis; Fishbone diagrams; 5 Whys"
+      },
+      {
+        "label": "Fishbone diagrams",
+        "sourceSection": "curriculum_day",
+        "context": "Week 3, Day 3: Root cause analysis; Fishbone diagrams; 5 Whys"
+      },
+      {
+        "label": "5 Whys",
+        "sourceSection": "curriculum_day",
+        "context": "Week 3, Day 3: Root cause analysis; Fishbone diagrams; 5 Whys"
+      },
+      {
+        "label": "Control charts introduction",
+        "sourceSection": "curriculum_day",
+        "context": "Week 3, Day 4: Control charts introduction; Basic statistics refresher"
+      },
+      {
+        "label": "Basic statistics refresher",
+        "sourceSection": "curriculum_day",
+        "context": "Week 3, Day 4: Control charts introduction; Basic statistics refresher"
+      },
+      {
+        "label": "Capstone kickoff",
+        "sourceSection": "curriculum_day",
+        "context": "Week 3, Day 5: Capstone kickoff; Project charter drafting"
+      },
+      {
+        "label": "Project charter drafting",
+        "sourceSection": "curriculum_day",
+        "context": "Week 3, Day 5: Capstone kickoff; Project charter drafting"
+      }
+    ]
+  }
+}

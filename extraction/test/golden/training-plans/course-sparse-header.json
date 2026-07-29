@@ -1,0 +1,101 @@
+{
+  "format": "course",
+  "confidence": 0.9,
+  "fields": {
+    "participant": "Elena K. Fontaine",
+    "trainingOutlineTitle": "Logistics Analyst Track",
+    "duration": "8 weeks",
+    "weeks": [
+      {
+        "week": 1,
+        "days": [
+          {
+            "day": 1,
+            "text": "Supply chain overview; Inventory concepts"
+          },
+          {
+            "day": 2,
+            "text": "Mastering Trello; Kanban for logistics teams"
+          },
+          {
+            "day": 3,
+            "text": "MS Excel for logistics; Lookup functions"
+          }
+        ],
+        "notes": [],
+        "dateRange": "Mar 2 - Mar 6",
+        "title": "Supply Chain Basics"
+      },
+      {
+        "week": 2,
+        "days": [
+          {
+            "day": 1,
+            "text": "Warehouse layout principles; Safety fundamentals"
+          },
+          {
+            "day": 2,
+            "text": "WMS software tour; Barcode scanning workflow"
+          }
+        ],
+        "notes": [],
+        "dateRange": "Mar 9 - Mar 13",
+        "title": "Warehouse Operations",
+        "hours": 40,
+        "objective": "Explain receiving, put-away, picking, and shipping flows."
+      }
+    ],
+    "skillCandidates": [
+      {
+        "label": "Supply chain overview",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 1: Supply chain overview; Inventory concepts"
+      },
+      {
+        "label": "Inventory concepts",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 1: Supply chain overview; Inventory concepts"
+      },
+      {
+        "label": "Mastering Trello",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 2: Mastering Trello; Kanban for logistics teams"
+      },
+      {
+        "label": "Kanban for logistics teams",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 2: Mastering Trello; Kanban for logistics teams"
+      },
+      {
+        "label": "MS Excel for logistics",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 3: MS Excel for logistics; Lookup functions"
+      },
+      {
+        "label": "Lookup functions",
+        "sourceSection": "curriculum_day",
+        "context": "Week 1, Day 3: MS Excel for logistics; Lookup functions"
+      },
+      {
+        "label": "Warehouse layout principles",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 1: Warehouse layout principles; Safety fundamentals"
+      },
+      {
+        "label": "Safety fundamentals",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 1: Warehouse layout principles; Safety fundamentals"
+      },
+      {
+        "label": "WMS software tour",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 2: WMS software tour; Barcode scanning workflow"
+      },
+      {
+        "label": "Barcode scanning workflow",
+        "sourceSection": "curriculum_day",
+        "context": "Week 2, Day 2: WMS software tour; Barcode scanning workflow"
+      }
+    ]
+  }
+}

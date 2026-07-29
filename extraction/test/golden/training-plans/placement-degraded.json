@@ -1,0 +1,38 @@
+{
+  "format": "placement",
+  "confidence": 0.65,
+  "fields": {
+    "participant": "Aisha Q. Lindqvist",
+    "host": "Keystone Fabrication Works",
+    "fellowshipStart": {
+      "raw": "3 Mar"
+    },
+    "fellowshipEnd": {
+      "raw": "23 May"
+    },
+    "jobTitle": "Welding Operations Fellow",
+    "responsibilities": [
+      "Assist certified welders with fixture setup and fit-up checks",
+      "Log weld inspection results on paper travelers",
+      "Maintain consumables inventory at the assigned bay"
+    ],
+    "weeklyHours": 36,
+    "skillCandidates": [
+      {
+        "label": "Assist certified welders with fixture setup and fit-up checks",
+        "sourceSection": "responsibilities",
+        "context": "Responsibilities: Assist certified welders with fixture setup and fit-up checks"
+      },
+      {
+        "label": "Log weld inspection results on paper travelers",
+        "sourceSection": "responsibilities",
+        "context": "Responsibilities: Log weld inspection results on paper travelers"
+      },
+      {
+        "label": "Maintain consumables inventory at the assigned bay",
+        "sourceSection": "responsibilities",
+        "context": "Responsibilities: Maintain consumables inventory at the assigned bay"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+Vets RISE Program - SkillBridge Training Outline
+
+Course Participant: Priya N. Raghavan
+Training Outline Title: Cloud Operations & Quality Track
+Duration: 16 weeks
+Location: Hybrid - Fort Brandon Learning Annex
+Hours: 640
+
+Week 11 (Nov 17 - Nov 21): Cloud Fundamentals (40 hours)
+Objective: Describe core cloud service and deployment models.
+Day 1: AWS Cloud Practitioner essentials; Shared responsibility model
+Day 2: Compute and storage services tour; S3 basics
+Day 3: Networking in the cloud; VPC concepts
+Day 4: Identity and access management; Least-privilege design
+Day 5: Cloud cost awareness; Billing dashboards
+
+Week 12 (Nov 24 - Nov 26): Applied Cloud Lab (24 hours)
+Objective: Deploy a small workload end to end.
+Day 1: Lab setup; Deploying a static site
+Day 2: Monitoring and alarms; CloudWatch basics
+Day 3: Lab review and cleanup
+No class Thursday or Friday - Thanksgiving Holiday.
+
+Week 15 (Dec 29 - Jan 2): Quality Systems (32 hours)
+Objective: Connect quality frameworks to day-to-day operations work.
+Day 1: Green Belt Foundations refresher; Quality gates
+Day 2: ISO 9001 overview; Audit readiness
+Day 3: Incident postmortems; Blameless review practice
+Day 4: Course wrap-up; Capstone presentations
+No class Thursday - New Year's Day Holiday.
+* Guest speaker: quality director from a regional utility (name varies by cohort).
