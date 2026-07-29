@@ -1,0 +1,13 @@
+Course Participant: Elena K. Fontaine
+Training Outline Title: Logistics Analyst Track
+Duration: 8 weeks
+
+Week 1 (Mar 2 - Mar 6): Supply Chain Basics
+Day 1: Supply chain overview; Inventory concepts
+Day 2: Mastering Trello; Kanban for logistics teams
+Day 3: MS Excel for logistics; Lookup functions
+
+Week 2 (Mar 9 - Mar 13): Warehouse Operations (40 hours)
+Objective: Explain receiving, put-away, picking, and shipping flows.
+Day 1: Warehouse layout principles; Safety fundamentals
+Day 2: WMS software tour; Barcode scanning workflow

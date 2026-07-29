@@ -1,0 +1,69 @@
+{
+  "format": "placement",
+  "confidence": 1,
+  "fields": {
+    "participant": "Renata Okafor-Bell",
+    "host": "Copperline Rail Logistics",
+    "fellowshipStart": {
+      "raw": "14 Oct"
+    },
+    "fellowshipEnd": {
+      "raw": "8 Jan"
+    },
+    "supervisor": {
+      "name": "Tomas Herrera",
+      "title": "Senior Yard Operations Manager"
+    },
+    "jobTitle": "Intermodal Operations Fellow",
+    "jobDescription": "The fellow will rotate through yard planning, gate operations, and dispatch, learning how intermodal freight is scheduled, staged, and turned.",
+    "responsibilities": [
+      "Shadow yard planners during morning switch planning",
+      "Maintain accurate gate transaction logs",
+      "Assist with chassis inventory reconciliation",
+      "Prepare the daily yard utilization summary"
+    ],
+    "weeklyHours": 40,
+    "skillCandidates": [
+      {
+        "label": "Operations Planning",
+        "sourceSection": "skills_list",
+        "context": "Skills to be Developed: Operations Planning"
+      },
+      {
+        "label": "Data Entry & Records Accuracy",
+        "sourceSection": "skills_list",
+        "context": "Skills to be Developed: Data Entry & Records Accuracy"
+      },
+      {
+        "label": "Radio Communication Protocol",
+        "sourceSection": "skills_list",
+        "context": "Skills to be Developed: Radio Communication Protocol"
+      },
+      {
+        "label": "Safety & Compliance Procedures",
+        "sourceSection": "skills_list",
+        "context": "Skills to be Developed: Safety & Compliance Procedures"
+      },
+      {
+        "label": "Shadow yard planners during morning switch planning",
+        "sourceSection": "responsibilities",
+        "context": "Responsibilities: Shadow yard planners during morning switch planning"
+      },
+      {
+        "label": "Maintain accurate gate transaction logs",
+        "sourceSection": "responsibilities",
+        "context": "Responsibilities: Maintain accurate gate transaction logs"
+      },
+      {
+        "label": "Assist with chassis inventory reconciliation",
+        "sourceSection": "responsibilities",
+        "context": "Responsibilities: Assist with chassis inventory reconciliation"
+      },
+      {
+        "label": "Prepare the daily yard utilization summary",
+        "sourceSection": "responsibilities",
+        "context": "Responsibilities: Prepare the daily yard utilization summary"
+      }
+    ]
+  }
+}

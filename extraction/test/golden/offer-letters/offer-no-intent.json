@@ -1,0 +1,30 @@
+{
+  "letterDate": {
+    "raw": "July 18, 2025",
+    "iso": "2025-07-18"
+  },
+  "host": "Copperline Rail Logistics",
+  "address": "88 Switchyard Court, Marion, OH 43302",
+  "startDate": {
+    "raw": "October 14, 2025",
+    "iso": "2025-10-14"
+  },
+  "endDate": {
+    "raw": "January 8, 2026",
+    "iso": "2026-01-08"
+  },
+  "roleTitle": "Intermodal Operations Fellow",
+  "supervisor": {
+    "name": "Tomas Herrera",
+    "title": "Senior Yard Operations Manager"
+  },
+  "dutiesRaw": [
+    "Shadow yard planners during morning switch planning",
+    "Maintain accurate gate transaction logs",
+    "Assist with chassis inventory reconciliation",
+    "Prepare the daily yard utilization summary"
+  ],
+  "employmentIntent": false,
+  "signatureEvidence": true,
+  "confidence": 1
+}

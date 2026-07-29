@@ -1,0 +1,31 @@
+Vets RISE Program - SkillBridge Training Outline
+
+Course Participant: Jordan A. Maxwell
+Training Outline Title: Project Management & Continuous Improvement Track
+Duration: 12 weeks
+Location: Remote (instructor-led online)
+Hours: 480
+
+Week 1 (Oct 6 - Oct 10): Agile Foundations (40 hours)
+Objective: Build a working vocabulary of Agile roles, events, and artifacts.
+Day 1: Course orientation; Agile mindset overview; History of Scrum
+Day 2: Mastering Trello; Boards, lists, and cards; Workflow automation basics
+Day 3: Scrum roles deep dive; Sprint ceremonies overview
+Day 4: User stories and backlog grooming; Estimation with story points
+Day 5: Team simulation lab; Retrospective practice
+
+Week 2 (Oct 13 - Oct 17): Data & Reporting Tools (40 hours)
+Objective: Produce basic dashboards and reports for project tracking.
+Day 1: MS Power BI; Connecting data sources
+Day 2: Data modeling fundamentals; DAX basics
+Day 3: Building dashboards in MS Power BI; Visualization best practices
+Day 4: MS Excel pivot tables; Conditional formatting for status reports
+Day 5: Reporting lab; Present a project dashboard
+
+Week 3 (Oct 20 - Oct 24): Green Belt Foundations (40 hours)
+Objective: Apply core Lean Six Sigma tools to a sample process problem.
+Day 1: Green Belt Foundations; DMAIC overview
+Day 2: Process mapping; SIPOC diagrams
+Day 3: Root cause analysis; Fishbone diagrams; 5 Whys
+Day 4: Control charts introduction; Basic statistics refresher
+Day 5: Capstone kickoff; Project charter drafting

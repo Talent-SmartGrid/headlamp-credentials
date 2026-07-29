@@ -1,0 +1,213 @@
+{
+  "format": "course",
+  "confidence": 1,
+  "fields": {
+    "participant": "Priya N. Raghavan",
+    "trainingOutlineTitle": "Cloud Operations & Quality Track",
+    "duration": "16 weeks",
+    "location": "Hybrid - Fort Brandon Learning Annex",
+    "totalHours": 640,
+    "weeks": [
+      {
+        "week": 11,
+        "days": [
+          {
+            "day": 1,
+            "text": "AWS Cloud Practitioner essentials; Shared responsibility model"
+          },
+          {
+            "day": 2,
+            "text": "Compute and storage services tour; S3 basics"
+          },
+          {
+            "day": 3,
+            "text": "Networking in the cloud; VPC concepts"
+          },
+          {
+            "day": 4,
+            "text": "Identity and access management; Least-privilege design"
+          },
+          {
+            "day": 5,
+            "text": "Cloud cost awareness; Billing dashboards"
+          }
+        ],
+        "notes": [],
+        "dateRange": "Nov 17 - Nov 21",
+        "title": "Cloud Fundamentals",
+        "hours": 40,
+        "objective": "Describe core cloud service and deployment models."
+      },
+      {
+        "week": 12,
+        "days": [
+          {
+            "day": 1,
+            "text": "Lab setup; Deploying a static site"
+          },
+          {
+            "day": 2,
+            "text": "Monitoring and alarms; CloudWatch basics"
+          },
+          {
+            "day": 3,
+            "text": "Lab review and cleanup"
+          }
+        ],
+        "notes": [
+          "No class Thursday or Friday - Thanksgiving Holiday."
+        ],
+        "dateRange": "Nov 24 - Nov 26",
+        "title": "Applied Cloud Lab",
+        "hours": 24,
+        "objective": "Deploy a small workload end to end."
+      },
+      {
+        "week": 15,
+        "days": [
+          {
+            "day": 1,
+            "text": "Green Belt Foundations refresher; Quality gates"
+          },
+          {
+            "day": 2,
+            "text": "ISO 9001 overview; Audit readiness"
+          },
+          {
+            "day": 3,
+            "text": "Incident postmortems; Blameless review practice"
+          },
+          {
+            "day": 4,
+            "text": "Course wrap-up; Capstone presentations"
+          }
+        ],
+        "notes": [
+          "No class Thursday - New Year's Day Holiday.",
+          "* Guest speaker: quality director from a regional utility (name varies by cohort)."
+        ],
+        "dateRange": "Dec 29 - Jan 2",
+        "title": "Quality Systems",
+        "hours": 32,
+        "objective": "Connect quality frameworks to day-to-day operations work."
+      }
+    ],
+    "skillCandidates": [
+      {
+        "label": "AWS Cloud Practitioner essentials",
+        "sourceSection": "curriculum_day",
+        "context": "Week 11, Day 1: AWS Cloud Practitioner essentials; Shared responsibility model"
+      },
+      {
+        "label": "Shared responsibility model",
+        "sourceSection": "curriculum_day",
+        "context": "Week 11, Day 1: AWS Cloud Practitioner essentials; Shared responsibility model"
+      },
+      {
+        "label": "Compute and storage services tour",
+        "sourceSection": "curriculum_day",
+        "context": "Week 11, Day 2: Compute and storage services tour; S3 basics"
+      },
+      {
+        "label": "S3 basics",
+        "sourceSection": "curriculum_day",
+        "context": "Week 11, Day 2: Compute and storage services tour; S3 basics"
+      },
+      {
+        "label": "Networking in the cloud",
+        "sourceSection": "curriculum_day",
+        "context": "Week 11, Day 3: Networking in the cloud; VPC concepts"
+      },
+      {
+        "label": "VPC concepts",
+        "sourceSection": "curriculum_day",
+        "context": "Week 11, Day 3: Networking in the cloud; VPC concepts"
+      },
+      {
+        "label": "Identity and access management",
+        "sourceSection": "curriculum_day",
+        "context": "Week 11, Day 4: Identity and access management; Least-privilege design"
+      },
+      {
+        "label": "Least-privilege design",
+        "sourceSection": "curriculum_day",
+        "context": "Week 11, Day 4: Identity and access management; Least-privilege design"
+      },
+      {
+        "label": "Cloud cost awareness",
+        "sourceSection": "curriculum_day",
+        "context": "Week 11, Day 5: Cloud cost awareness; Billing dashboards"
+      },
+      {
+        "label": "Billing dashboards",
+        "sourceSection": "curriculum_day",
+        "context": "Week 11, Day 5: Cloud cost awareness; Billing dashboards"
+      },
+      {
+        "label": "Lab setup",
+        "sourceSection": "curriculum_day",
+        "context": "Week 12, Day 1: Lab setup; Deploying a static site"
+      },
+      {
+        "label": "Deploying a static site",
+        "sourceSection": "curriculum_day",
+        "context": "Week 12, Day 1: Lab setup; Deploying a static site"
+      },
+      {
+        "label": "Monitoring and alarms",
+        "sourceSection": "curriculum_day",
+        "context": "Week 12, Day 2: Monitoring and alarms; CloudWatch basics"
+      },
+      {
+        "label": "CloudWatch basics",
+        "sourceSection": "curriculum_day",
+        "context": "Week 12, Day 2: Monitoring and alarms; CloudWatch basics"
+      },
+      {
+        "label": "Lab review and cleanup",
+        "sourceSection": "curriculum_day",
+        "context": "Week 12, Day 3: Lab review and cleanup"
+      },
+      {
+        "label": "Green Belt Foundations refresher",
+        "sourceSection": "curriculum_day",
+        "context": "Week 15, Day 1: Green Belt Foundations refresher; Quality gates"
+      },
+      {
+        "label": "Quality gates",
+        "sourceSection": "curriculum_day",
+        "context": "Week 15, Day 1: Green Belt Foundations refresher; Quality gates"
+      },
+      {
+        "label": "ISO 9001 overview",
+        "sourceSection": "curriculum_day",
+        "context": "Week 15, Day 2: ISO 9001 overview; Audit readiness"
+      },
+      {
+        "label": "Audit readiness",
+        "sourceSection": "curriculum_day",
+        "context": "Week 15, Day 2: ISO 9001 overview; Audit readiness"
+      },
+      {
+        "label": "Incident postmortems",
+        "sourceSection": "curriculum_day",
+        "context": "Week 15, Day 3: Incident postmortems; Blameless review practice"
+      },
+      {
+        "label": "Blameless review practice",
+        "sourceSection": "curriculum_day",
+        "context": "Week 15, Day 3: Incident postmortems; Blameless review practice"
+      },
+      {
+        "label": "Course wrap-up",
+        "sourceSection": "curriculum_day",
+        "context": "Week 15, Day 4: Course wrap-up; Capstone presentations"
+      },
+      {
+        "label": "Capstone presentations",
+        "sourceSection": "curriculum_day",
+        "context": "Week 15, Day 4: Course wrap-up; Capstone presentations"
+      }
+    ]
+  }
+}

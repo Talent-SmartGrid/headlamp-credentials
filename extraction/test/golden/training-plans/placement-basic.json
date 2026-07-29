@@ -1,0 +1,71 @@
+{
+  "format": "placement",
+  "confidence": 1,
+  "fields": {
+    "participant": "Marcus T. Delgado",
+    "host": "Ironvale Energy Services",
+    "fellowshipStart": {
+      "raw": "June 2, 2025",
+      "iso": "2025-06-02"
+    },
+    "fellowshipEnd": {
+      "raw": "August 22, 2025",
+      "iso": "2025-08-22"
+    },
+    "supervisor": {
+      "name": "Dana Whitfield",
+      "title": "Director of Field Operations"
+    },
+    "jobTitle": "Wind Turbine Technician Fellow",
+    "jobDescription": "The fellow will train alongside Ironvale's field maintenance crews, learning scheduled preventive maintenance, troubleshooting, and safety procedures for utility-scale wind turbines.",
+    "responsibilities": [
+      "Assist crews with scheduled preventive maintenance on turbine drivetrains",
+      "Document inspection findings in the maintenance tracking system",
+      "Support lockout/tagout procedures under direct supervision",
+      "Participate in daily safety briefings and toolbox talks"
+    ],
+    "weeklyHours": 40,
+    "skillCandidates": [
+      {
+        "label": "Technical Insight & Analysis",
+        "sourceSection": "skills_list",
+        "context": "Skills to be Developed: Technical Insight & Analysis"
+      },
+      {
+        "label": "Equipment Maintenance",
+        "sourceSection": "skills_list",
+        "context": "Skills to be Developed: Equipment Maintenance"
+      },
+      {
+        "label": "Safety & Compliance Procedures",
+        "sourceSection": "skills_list",
+        "context": "Skills to be Developed: Safety & Compliance Procedures"
+      },
+      {
+        "label": "Team Communication",
+        "sourceSection": "skills_list",
+        "context": "Skills to be Developed: Team Communication"
+      },
+      {
+        "label": "Assist crews with scheduled preventive maintenance on turbine drivetrains",
+        "sourceSection": "responsibilities",
+        "context": "Responsibilities: Assist crews with scheduled preventive maintenance on turbine drivetrains"
+      },
+      {
+        "label": "Document inspection findings in the maintenance tracking system",
+        "sourceSection": "responsibilities",
+        "context": "Responsibilities: Document inspection findings in the maintenance tracking system"
+      },
+      {
+        "label": "Support lockout/tagout procedures under direct supervision",
+        "sourceSection": "responsibilities",
+        "context": "Responsibilities: Support lockout/tagout procedures under direct supervision"
+      },
+      {
+        "label": "Participate in daily safety briefings and toolbox talks",
+        "sourceSection": "responsibilities",
+        "context": "Responsibilities: Participate in daily safety briefings and toolbox talks"
+      }
+    ]
+  }
+}

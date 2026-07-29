@@ -1,0 +1,25 @@
+{
+  "letterDate": {
+    "raw": "May 5, 2025",
+    "iso": "2025-05-05"
+  },
+  "host": "Keystone Fabrication Works",
+  "address": "12 Foundry Lane, Altoona, PA 16601",
+  "startDate": {
+    "raw": "June 9, 2025",
+    "iso": "2025-06-09"
+  },
+  "endDate": {
+    "raw": "August 29, 2025",
+    "iso": "2025-08-29"
+  },
+  "roleTitle": "Welding Operations Fellow",
+  "dutiesRaw": [
+    "Assist certified welders with fixture setup and fit-up checks",
+    "Log weld inspection results on paper travelers",
+    "Maintain consumables inventory at the assigned bay"
+  ],
+  "employmentIntent": true,
+  "signatureEvidence": false,
+  "confidence": 0.8
+}

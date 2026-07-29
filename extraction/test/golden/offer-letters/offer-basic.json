@@ -1,0 +1,30 @@
+{
+  "letterDate": {
+    "raw": "March 3, 2025",
+    "iso": "2025-03-03"
+  },
+  "host": "Ironvale Energy Services",
+  "address": "4100 Range Road, Odessa, TX 79762",
+  "startDate": {
+    "raw": "June 2, 2025",
+    "iso": "2025-06-02"
+  },
+  "endDate": {
+    "raw": "August 22, 2025",
+    "iso": "2025-08-22"
+  },
+  "roleTitle": "Wind Turbine Technician Fellow",
+  "supervisor": {
+    "name": "Dana Whitfield",
+    "title": "Director of Field Operations"
+  },
+  "dutiesRaw": [
+    "Assist with scheduled preventive maintenance on turbine drivetrains",
+    "Document inspection findings in the maintenance tracking system",
+    "Support lockout/tagout procedures under direct supervision",
+    "Participate in daily safety briefings and toolbox talks"
+  ],
+  "employmentIntent": true,
+  "signatureEvidence": true,
+  "confidence": 1
+}
