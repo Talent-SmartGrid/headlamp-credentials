@@ -38,24 +38,10 @@ npm test                # vitest (golden files committed)
 npm run golden:update   # regenerate goldens after an intentional change — review the diff
 ```
 
-The root CI workflow does not currently descend into `extraction/`
-(keeping the crypto core's diff surface at zero was a hard constraint of
-this prototype). To put this package under the same CI gate, add a second
-job to `.github/workflows/ci.yml`:
-
-```yaml
-  extraction:
-    runs-on: ubuntu-latest
-    defaults: {run: {working-directory: extraction}}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: {node-version: '22.x', cache: npm, cache-dependency-path: extraction/package-lock.json}
-      - run: npm ci
-      - run: npm run typecheck:all
-      - run: npm run lint
-      - run: npm test
-```
+CI runs this package on every push alongside the core: the `extraction`
+job in `.github/workflows/ci.yml` executes the same
+`typecheck:all` / `lint` / `test` gates on the same Node matrix as the
+root package.
 
 ## API surface
 
