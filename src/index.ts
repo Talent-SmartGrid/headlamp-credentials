@@ -22,7 +22,15 @@ export {
   didWebDocumentUrl,
   type PublicKeyEntry,
 } from './did.js';
-export {importKey, generateKeyPair, type KeyMaterial, type SigningKey} from './keys.js';
+export {
+  importKey,
+  generateKeyPair,
+  publicKeyMultibaseFromRaw,
+  type CredentialSigner,
+  type KeyLike,
+  type KeyMaterial,
+  type SigningKey,
+} from './keys.js';
 export {signCredential, verificationSuite} from './sign.js';
 export {
   buildStatusListCredential,

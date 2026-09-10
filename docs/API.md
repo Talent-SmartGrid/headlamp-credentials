@@ -20,10 +20,13 @@ import {/* … */} from 'headlamp-credentials';
 ## The rules the API enforces
 
 1. **Keys are injected, never loaded.** Every signing function takes a
-   `SigningKey` produced by `importKey(material)`. Key material lives in the
-   platform's secret store; this library has no notion of key files, env
-   vars, or config. The only keys in this repo are test keys under
-   `test/fixtures/` marked `TEST KEY — NEVER USE IN PRODUCTION`.
+   `KeyLike` — either a `SigningKey` produced by `importKey(material)`, or a
+   key whose private half is held by a managed key service and reached
+   through `signer()` (see *Signing with a managed key service* below). Key
+   material lives in the platform's secret store or key service; this library
+   has no notion of key files, env vars, or config. The only keys in this
+   repo are test keys under `test/fixtures/` marked
+   `TEST KEY — NEVER USE IN PRODUCTION`.
 2. **Completion language requires an attestation — by type.** The
    `EvidenceBasis` union has no variant that yields "Completed …" wording
    without a `SupervisorAttestation` object. `{basis: 'attestation'}` or
@@ -243,12 +246,60 @@ npx headlamp-credentials verify bundle.json --json   # machine-readable
 # exit codes: 0 verified · 1 not verified · 2 usage/IO error
 ```
 
+## Signing with a managed key service
+
+A production issuer should not hold its private key in process memory. AWS KMS
+and Google Cloud KMS both offer **pure Ed25519** (`ECC_NIST_EDWARDS25519` /
+`EC_SIGN_ED25519`), which is exactly what `eddsa-rdfc-2022` needs. Implement
+`KeyLike` and the library never learns which vendor you use:
+
+```ts
+import {publicKeyMultibaseFromRaw, signCredential, type KeyLike} from 'headlamp-credentials';
+
+// Once, at startup: fetch the public key and encode it the way the DID
+// document must publish it. The service returns DER SubjectPublicKeyInfo;
+// the raw 32-byte key is the last 32 bytes.
+const der = await kms.getPublicKey();
+const publicKeyMultibase = await publicKeyMultibaseFromRaw(der.subarray(-32));
+
+const key: KeyLike = {
+  id: 'did:web:myheadlamp.com#key-2',   // MUST match the DID document
+  controller: 'did:web:myheadlamp.com',
+  publicKeyMultibase,
+  signer: () => ({
+    id: 'did:web:myheadlamp.com#key-2',
+    algorithm: 'Ed25519',
+    // `data` is 64 bytes. Sign it AS-IS and return the raw 64-byte signature.
+    sign: async ({data}) => kms.sign(data),
+  }),
+};
+
+await signCredential({credential, key});
+```
+
+⛔ **Three ways to get this wrong, all of which produce a well-formed document
+that fails verification on someone else's verifier:**
+
+1. **Pre-hashing.** `eddsa-rdfc-2022` hands the signer 64 bytes and expects
+   *pure* Ed25519 (RFC 8032), which hashes internally. AWS's
+   `ED25519_PH_SHA_512` pre-hashes and will **not** verify — use
+   `ED25519_SHA_512` with `MessageType: RAW`.
+2. **A wrapped signature.** Return the raw 64 bytes, not DER, not base64.
+3. **A key id that is not published.** `signer().id` is written into
+   `proof.verificationMethod`; if the DID document does not list that exact
+   verification method, nothing verifies.
+
+`test/external-signer.test.ts` pins all three as negative controls, and signs
+through a fake key service backed by `node:crypto` to prove the local and
+managed paths produce **byte-identical** documents.
+
 ## API surface at a glance
 
 | Function | Purpose |
 | --- | --- |
-| `importKey(material)` | Injected key material → signing key (the only key entry point) |
+| `importKey(material)` | Injected key material → signing key (locally-held keys) |
 | `generateKeyPair({id, controller})` | Provision a new key pair (store output in secret store) |
+| `publicKeyMultibaseFromRaw(bytes)` | Raw 32-byte Ed25519 public key → `z6Mk…` multibase |
 | `buildDidWebDocument({domain, publicKeys})` | DID document for the well-known path; multi-key |
 | `didWeb(domain)` / `didWebDocumentUrl(did)` | DID ↔ URL mapping |
 | `assertionText(evidence)` | The three-pattern assertion engine (pure) |

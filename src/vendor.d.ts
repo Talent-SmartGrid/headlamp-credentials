@@ -6,7 +6,11 @@
 declare module '@digitalbazaar/ed25519-multikey' {
   export interface Ed25519Signer {
     id: string;
-    algorithm: string;
+    // The vendor's own literal (lib/factory.js: `const ALGORITHM = 'Ed25519'`),
+    // not an open string. Narrowing it here is what makes an Ed25519Multikey
+    // structurally assignable to `KeyLike` — i.e. what keeps the local and
+    // managed-service key paths ONE type rather than two.
+    algorithm: 'Ed25519';
     sign(options: { data: Uint8Array }): Promise<Uint8Array>;
   }
   export interface Ed25519Verifier {
@@ -34,6 +38,12 @@ declare module '@digitalbazaar/ed25519-multikey' {
     seed?: Uint8Array;
   }): Promise<Ed25519Multikey>;
   export function from(key: Record<string, unknown>): Promise<Ed25519Multikey>;
+  export function fromJwk(options: {
+    jwk: Record<string, unknown>;
+    secretKey?: boolean;
+    id?: string;
+    controller?: string;
+  }): Promise<Ed25519Multikey>;
 }
 
 declare module '@digitalbazaar/data-integrity' {

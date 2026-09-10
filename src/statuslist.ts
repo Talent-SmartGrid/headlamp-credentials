@@ -14,7 +14,7 @@ import {
 } from '@digitalbazaar/vc-bitstring-status-list';
 
 import {VC_V2_CONTEXT_URL, type DocumentLoader} from './contexts.js';
-import type {SigningKey} from './keys.js';
+import type {KeyLike} from './keys.js';
 import {signCredential} from './sign.js';
 import {verificationSuite} from './sign.js';
 import type {IsoDateTime, IssuerProfile, SignedCredential} from './types.js';
@@ -29,7 +29,7 @@ export async function buildStatusListCredential(options: {
   /** Stable URL the platform serves this list from. */
   id: string;
   issuer: IssuerProfile;
-  key: SigningKey;
+  key: KeyLike;
   revokedIndices?: number[];
   length?: number;
   validFrom: IsoDateTime;
