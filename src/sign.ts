@@ -8,7 +8,7 @@ import {DataIntegrityProof} from '@digitalbazaar/data-integrity';
 import {cryptosuite as eddsaRdfc2022CryptoSuite} from '@digitalbazaar/eddsa-rdfc-2022-cryptosuite';
 
 import {createOfflineDocumentLoader, type DocumentLoader} from './contexts.js';
-import type {SigningKey} from './keys.js';
+import type {KeyLike} from './keys.js';
 import type {SignedCredential, UnsignedCredential} from './types.js';
 
 /** The verification suite used everywhere in this library. */
@@ -25,12 +25,22 @@ export function verificationSuite(): unknown {
  */
 export async function signCredential(options: {
   credential: UnsignedCredential;
-  key: SigningKey;
+  key: KeyLike;
   proofDate?: string;
   documentLoader?: DocumentLoader;
 }): Promise<SignedCredential> {
-  if (!options.key.secretKeyMultibase) {
-    throw new Error('signCredential requires a key with secret material');
+  // ⛔ THE CHECK IS "CAN THIS KEY PRODUCE A SIGNER", NOT "IS THERE A LOCAL
+  // SECRET". It used to be `!options.key.secretKeyMultibase`, which was a
+  // correct test only while every signer held its private key in this process.
+  // A managed-key-service key (AWS KMS, GCP KMS) signs perfectly well and has
+  // no `secretKeyMultibase` by construction — the guard would have rejected
+  // the one arrangement where the private key is properly protected.
+  //
+  // Nothing is silently permitted by the change. A verification-only
+  // Ed25519Multikey still fails loudly, one frame deeper, with the vendor's own
+  // "A secret key is not available for signing." — see the test that pins it.
+  if (typeof options.key?.signer !== 'function') {
+    throw new Error('signCredential requires a key exposing signer()');
   }
   const suite = new DataIntegrityProof({
     signer: options.key.signer(),
